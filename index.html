@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <title>Code Player</title>
+    
+    
+</head>
+<body>
+    <header>
+    
+        <nav>
+        
+            <ul class="fc">
+            
+                <li id="logo"><h1>CodePlayer</h1></li>
+                <li class="toggle active" id="html">HTML
+                
+                </li>
+                <li class="toggle active" id="css">CSS
+                </li>
+                
+                <li class="toggle active" id="javascript">Javascript
+                </li>
+                <li class="toggle active" id="output">Output
+                </li>
+                
+                
+            </ul>
+        
+        </nav>
+    
+    </header>
+    <main class="fc">
+        <!--type-in area for HTML code-->
+        <section id="html-section">
+            <textarea  id="html-pane" placeholder="Enter HTML Code Here"></textarea>
+        </section>
+        
+        <!--type-in area for CSS-->
+        
+        <section id="css-section">
+            <textarea id="css-pane"  placeholder="Enter CSS here"></textarea>
+        </section>
+        
+        <!--Javascript pane will not be functional for security reasons-->
+        <section id="javascript-section">
+            <textarea id="javascript-pane"  placeholder="Javascript will not be functional."></textarea>
+        </section>
+        
+        <!--output section will update as user types-->
+        
+        <section id="output-section">
+            <iframe id="output-pane"></iframe>
+        
+        </section>
+        
+    </main>
+
+    
+    <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="jquery-3.1.1.js"></script>
+	<script src="script.js"></script>
+   
+</body>
+
+</html>
